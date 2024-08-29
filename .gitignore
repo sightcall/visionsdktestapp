@@ -1,0 +1,8 @@
+#ignore generated builded archive
+buildArchive/*
+Pods/*
+**/.DS_Store
+**/xcuserdata
+**/*.xcuserdatad
+**/project.xcworkspace
+
