@@ -5,4 +5,5 @@ Pods/*
 **/xcuserdata
 **/*.xcuserdatad
 **/project.xcworkspace
+/VisionSDKTestApp.xcworkspace
 

@@ -13,10 +13,15 @@ class ViewController: UIViewController {
 
     var termsOfConsentAlertController: UIAlertController?
 
-    var sdkLayer: SightCallSDKManager?
+    var sdkLayer: SightCallSDKManager? {
+        guard let visionSDKNavigationController = navigationController as? VisionSDKNavigationController else {
+            return nil
+        }
+        return visionSDKNavigationController.sdkLayer
+    }
 
-    var model: LSApplicationModel {
-        sdkLayer!.model
+    var model: LSApplicationModel? {
+        sdkLayer?.model
     }
 
     weak var topViewController: UIViewController?
@@ -24,13 +29,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        sdkLayer = SightCallSDKManager(delegate: self)
+        // Setup sdkLayer in VisionSDKNavigationController
+        if let visionSDKNavigationController = navigationController as? VisionSDKNavigationController {
+            visionSDKNavigationController.sdkLayer = SightCallSDKManager(delegate: self)
+            visionSDKNavigationController.sdkLayer?.model.controllerDelegate = visionSDKNavigationController
+        }
+
         start()
     }
 
     func start() {
         // Before running the app open desktop agent, start session than copy URL here...
-        let urlString = "https://guest.sightcall.com/call/a9ee6cc78cdf1ad544e8767a002dbcfc76959d01?pin=187426"
+        let urlString = "https://guest.sightcall.com/call/23d16e5d8e6d17475ed0002c5d5049d1bbf269ff?pin=914825"
         let url = URL(string: urlString)
         // Now you can start the call
         sdkLayer?.startSdk(url: url, data: nil, forceReload: false)

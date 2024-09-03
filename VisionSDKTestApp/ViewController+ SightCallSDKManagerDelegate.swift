@@ -42,7 +42,7 @@ extension ViewController: SightCallSDKManagerDelegate {
 
     func connectionEvent(_ status: lsConnectionStatus_t) {
         // For user friendly print we are casting status to Swift ConnectionStatus enum
-        print("VisionSDKTest status:", ConnectionStatus(rawValue: status.rawValue) ?? .dummy)
+        NSLog("VisionSDKTest connectionEvent status: \(ConnectionStatus(rawValue: status.rawValue) ?? .dummy)")
         switch status {
 
             // Call status
@@ -54,7 +54,9 @@ extension ViewController: SightCallSDKManagerDelegate {
             break
         case .callActive:
             Task { @MainActor in
-                guard let callViewController = self.universal.callViewController else { return }
+                guard let callViewController = model?.universal.callViewController else {
+                    return
+                }
                 self.topViewController = callViewController
                 self.present(callViewController, animated: true)
             }
@@ -110,11 +112,11 @@ extension ViewController: SightCallSDKManagerDelegate {
     }
     
     func sdkManagerParentViewController() -> UINavigationController? {
-        sdkLayer?.model.controllerDelegate as UINavigationController?
+        sdkLayer?.model.controllerDelegate as! UINavigationController?
     }
 
 
-// MARK: Optional functions
+    // MARK: Optional functions
 
     func acdStatusUpdate(_ update: LSACDQueue) {
 
@@ -178,7 +180,7 @@ extension ViewController: SightCallSDKManagerDelegate {
             }
 
             if UIApplication.shared.canOpenURL(eulaURL) {
-                DispatchQueue.main.async {
+                Task { @MainActor in
                     UIApplication.shared.open(eulaURL)
                 }
             }
@@ -188,7 +190,7 @@ extension ViewController: SightCallSDKManagerDelegate {
         termsOfConsentAlertController?.addAction(agreeAction)
         termsOfConsentAlertController?.addAction(eulaAction)
 
-        DispatchQueue.main.async {
+        Task { @MainActor in
             self.show(self.termsOfConsentAlertController!, sender: self)
         }
     }

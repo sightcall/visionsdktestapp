@@ -15,6 +15,7 @@
 		AF4645DA2C7CE404002C96F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4645D92C7CE404002C96F6 /* Assets.xcassets */; };
 		AF4645DD2C7CE404002C96F6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AF4645DC2C7CE404002C96F6 /* Base */; };
 		AF4645E52C7CE5BE002C96F6 /* ViewController+ SightCallSDKManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4645E42C7CE5BE002C96F6 /* ViewController+ SightCallSDKManagerDelegate.swift */; };
+		AF4645E92C85C5C9002C96F6 /* VisionSDKNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4645E82C85C5C9002C96F6 /* VisionSDKNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AF4645DC2C7CE404002C96F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF4645DE2C7CE404002C96F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF4645E42C7CE5BE002C96F6 /* ViewController+ SightCallSDKManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+ SightCallSDKManagerDelegate.swift"; sourceTree = "<group>"; };
+		AF4645E82C85C5C9002C96F6 /* VisionSDKNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionSDKNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				AF4645D22C7CE402002C96F6 /* SceneDelegate.swift */,
 				AF4645D42C7CE402002C96F6 /* ViewController.swift */,
 				AF4645E42C7CE5BE002C96F6 /* ViewController+ SightCallSDKManagerDelegate.swift */,
+				AF4645E82C85C5C9002C96F6 /* VisionSDKNavigationController.swift */,
 				AF4645D62C7CE402002C96F6 /* Main.storyboard */,
 				AF4645D92C7CE404002C96F6 /* Assets.xcassets */,
 				AF4645DB2C7CE404002C96F6 /* LaunchScreen.storyboard */,
@@ -213,6 +216,7 @@
 				AF4645E52C7CE5BE002C96F6 /* ViewController+ SightCallSDKManagerDelegate.swift in Sources */,
 				AF4645D12C7CE402002C96F6 /* AppDelegate.swift in Sources */,
 				AF4645D32C7CE402002C96F6 /* SceneDelegate.swift in Sources */,
+				AF4645E92C85C5C9002C96F6 /* VisionSDKNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,8 +370,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WDH9UWSA4G;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VisionSDKTestApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Reason for using camera";
+				INFOPLIST_KEY_NSLocationTemporaryUsageDescriptionDictionary = "Reason for using location";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Reason for using microphone";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -395,8 +403,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WDH9UWSA4G;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VisionSDKTestApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Reason for using camera";
+				INFOPLIST_KEY_NSLocationTemporaryUsageDescriptionDictionary = "Reason for using location";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Reason for using microphone";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
