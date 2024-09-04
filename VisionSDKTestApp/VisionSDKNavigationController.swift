@@ -38,8 +38,9 @@ class VisionSDKNavigationController: UINavigationController, ModelControllerDele
     // MARK: ModelControllerDelegate
     
     func connectionStep(_ state: step_t) {
-        switch state {
+        NSLog("VisionSDKTest connectionStep state \(state)")
 
+        switch state {
         case .idle:
             break
         case .connecting:

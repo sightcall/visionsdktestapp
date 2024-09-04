@@ -40,7 +40,10 @@ class ViewController: UIViewController {
 
     func start() {
         // Before running the app open desktop agent, start session than copy URL here...
-        let urlString = "https://guest.sightcall.com/call/23d16e5d8e6d17475ed0002c5d5049d1bbf269ff?pin=914825"
+//        let urlString = "https://guest.sightcall.com/call/23d16e5d8e6d17475ed0002c5d5049d1bbf269ff?pin=914825"
+
+        // ?debug=true
+        let urlString = "https://sght.io/a/Me6aT1SA?m=mneoVWFjMi?debug=true"
         let url = URL(string: urlString)
         // Now you can start the call
         sdkLayer?.startSdk(url: url, data: nil, forceReload: false)
