@@ -11,8 +11,6 @@ import ApplicationModel
 
 class VisionSDKNavigationController: UINavigationController, ModelControllerDelegate {
 
-    var sdkLayer: SightCallSDKManager?
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -55,7 +53,10 @@ class VisionSDKNavigationController: UINavigationController, ModelControllerDele
             Task { @MainActor in
 
                 // Make callViewController visible
-                guard let callViewController = self.sdkLayer?.model.universal.callViewController else {
+                guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+                    return
+                }
+                guard let callViewController = appDelegate.sdkLayer.model.universal.callViewController else {
                     return
                 }
 

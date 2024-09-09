@@ -7,10 +7,9 @@
 
 import UIKit
 import SightcallVision
-import ApplicationModel
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: SightcallSDKAppDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -31,6 +30,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    override func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        super.application(application, didRegisterForRemoteNotificationsWithDeviceToken: deviceToken)
+    }
 
+    override func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: any Error) {
+        super.application(application, didFailToRegisterForRemoteNotificationsWithError: error)
+    }
 }
 

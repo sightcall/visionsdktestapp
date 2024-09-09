@@ -14,10 +14,10 @@ class ViewController: UIViewController {
     var termsOfConsentAlertController: UIAlertController?
 
     var sdkLayer: SightCallSDKManager? {
-        guard let visionSDKNavigationController = navigationController as? VisionSDKNavigationController else {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return nil
         }
-        return visionSDKNavigationController.sdkLayer
+        return appDelegate.sdkLayer
     }
 
     var model: LSApplicationModel? {
@@ -29,10 +29,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Setup sdkLayer in VisionSDKNavigationController
+        // Setup sdkLayer
+        sdkLayer?.delegate = self // This is required or your app will crash
+        
         if let visionSDKNavigationController = navigationController as? VisionSDKNavigationController {
-            visionSDKNavigationController.sdkLayer = SightCallSDKManager(delegate: self)
-            visionSDKNavigationController.sdkLayer?.model.controllerDelegate = visionSDKNavigationController
+            sdkLayer?.model.controllerDelegate = visionSDKNavigationController
         }
 
         start()
@@ -43,7 +44,7 @@ class ViewController: UIViewController {
 //        let urlString = "https://guest.sightcall.com/call/23d16e5d8e6d17475ed0002c5d5049d1bbf269ff?pin=914825"
 
         // ?debug=true
-        let urlString = "https://sght.io/a/Me6aT1SA?m=mneoVWFjMi?debug=true"
+        let urlString = "https://sght.io/a/Me6aT1SA?m=mMS2O5cRQL"
         let url = URL(string: urlString)
         // Now you can start the call
         sdkLayer?.startSdk(url: url, data: nil, forceReload: false)
