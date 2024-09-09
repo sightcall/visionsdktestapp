@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,10 +15,12 @@
 		AF4645DD2C7CE404002C96F6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AF4645DC2C7CE404002C96F6 /* Base */; };
 		AF4645E52C7CE5BE002C96F6 /* ViewController+ SightCallSDKManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4645E42C7CE5BE002C96F6 /* ViewController+ SightCallSDKManagerDelegate.swift */; };
 		AF4645E92C85C5C9002C96F6 /* VisionSDKNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4645E82C85C5C9002C96F6 /* VisionSDKNavigationController.swift */; };
-		AF4645EC2C8862DA002C96F6 /* SightcallVision in Frameworks */ = {isa = PBXBuildFile; productRef = AF4645EB2C8862DA002C96F6 /* SightcallVision */; };
+		DF649BDFE8F2D9DC6F461CFD /* Pods_VisionSDKTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F6A0D9491F8FD93A486F87 /* Pods_VisionSDKTestApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24746702874950681F46E59D /* Pods-VisionSDKTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisionSDKTestApp.release.xcconfig"; path = "Target Support Files/Pods-VisionSDKTestApp/Pods-VisionSDKTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		378FF11A18AD0A6C7AF5C77A /* Pods-VisionSDKTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisionSDKTestApp.debug.xcconfig"; path = "Target Support Files/Pods-VisionSDKTestApp/Pods-VisionSDKTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AF4645CD2C7CE402002C96F6 /* VisionSDKTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionSDKTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4645D02C7CE402002C96F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF4645D22C7CE402002C96F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +32,7 @@
 		AF4645E42C7CE5BE002C96F6 /* ViewController+ SightCallSDKManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+ SightCallSDKManagerDelegate.swift"; sourceTree = "<group>"; };
 		AF4645E82C85C5C9002C96F6 /* VisionSDKNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionSDKNavigationController.swift; sourceTree = "<group>"; };
 		AF4645ED2C888ED3002C96F6 /* VisionSDKTestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VisionSDKTestApp.entitlements; sourceTree = "<group>"; };
+		B5F6A0D9491F8FD93A486F87 /* Pods_VisionSDKTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VisionSDKTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF4645EC2C8862DA002C96F6 /* SightcallVision in Frameworks */,
+				DF649BDFE8F2D9DC6F461CFD /* Pods_VisionSDKTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,8 +50,18 @@
 		4D726D04A7E17CC23CF7041D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				378FF11A18AD0A6C7AF5C77A /* Pods-VisionSDKTestApp.debug.xcconfig */,
+				24746702874950681F46E59D /* Pods-VisionSDKTestApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		89E51839B23689E6F4360CDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5F6A0D9491F8FD93A486F87 /* Pods_VisionSDKTestApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AF4645C42C7CE402002C96F6 = {
@@ -57,6 +70,7 @@
 				AF4645CF2C7CE402002C96F6 /* VisionSDKTestApp */,
 				AF4645CE2C7CE402002C96F6 /* Products */,
 				4D726D04A7E17CC23CF7041D /* Pods */,
+				89E51839B23689E6F4360CDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF4645E12C7CE404002C96F6 /* Build configuration list for PBXNativeTarget "VisionSDKTestApp" */;
 			buildPhases = (
+				DFB8A25CB3C6998850F86CA3 /* [CP] Check Pods Manifest.lock */,
 				AF4645C92C7CE402002C96F6 /* Sources */,
 				AF4645CA2C7CE402002C96F6 /* Frameworks */,
 				AF4645CB2C7CE402002C96F6 /* Resources */,
+				F183F3C7CED72A6F0F43A49B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -102,7 +118,6 @@
 			);
 			name = VisionSDKTestApp;
 			packageProductDependencies = (
-				AF4645EB2C8862DA002C96F6 /* SightcallVision */,
 			);
 			productName = VisionSDKTestApp;
 			productReference = AF4645CD2C7CE402002C96F6 /* VisionSDKTestApp.app */;
@@ -132,9 +147,6 @@
 				Base,
 			);
 			mainGroup = AF4645C42C7CE402002C96F6;
-			packageReferences = (
-				AF4645EA2C8862DA002C96F6 /* XCLocalSwiftPackageReference "../livesight-universalsdk/SDKs/Modules/SightcallVision" */,
-			);
 			productRefGroup = AF4645CE2C7CE402002C96F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -156,6 +168,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DFB8A25CB3C6998850F86CA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VisionSDKTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F183F3C7CED72A6F0F43A49B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VisionSDKTestApp/Pods-VisionSDKTestApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VisionSDKTestApp/Pods-VisionSDKTestApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VisionSDKTestApp/Pods-VisionSDKTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF4645C92C7CE402002C96F6 /* Sources */ = {
@@ -313,6 +367,7 @@
 		};
 		AF4645E22C7CE404002C96F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 378FF11A18AD0A6C7AF5C77A /* Pods-VisionSDKTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -346,6 +401,7 @@
 		};
 		AF4645E32C7CE404002C96F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24746702874950681F46E59D /* Pods-VisionSDKTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -399,20 +455,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		AF4645EA2C8862DA002C96F6 /* XCLocalSwiftPackageReference "../livesight-universalsdk/SDKs/Modules/SightcallVision" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../livesight-universalsdk/SDKs/Modules/SightcallVision";
-		};
-/* End XCLocalSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		AF4645EB2C8862DA002C96F6 /* SightcallVision */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = SightcallVision;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF4645C52C7CE402002C96F6 /* Project object */;
 }
