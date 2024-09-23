@@ -6,47 +6,47 @@ PODS:
   - AFNetworking/Reachability (4.0.1)
   - AFNetworking/Security (4.0.1)
   - AFNetworking/Serialization (4.0.1)
-  - VisionSDK (5.8.3):
-    - VisionSDK/AdvancedAnnotations (= 5.8.3)
-    - VisionSDK/ApplicationModel (= 5.8.3)
-    - VisionSDK/CocoaLumberjack (= 5.8.3)
-    - VisionSDK/CodeScanner (= 5.8.3)
-    - VisionSDK/Common (= 5.8.3)
-    - VisionSDK/CommonObjC (= 5.8.3)
-    - VisionSDK/Core (= 5.8.3)
-    - VisionSDK/DigitalFlow (= 5.8.3)
-    - VisionSDK/FileUpload (= 5.8.3)
-    - VisionSDK/Gzip (= 5.8.3)
-    - VisionSDK/LiveTranslation (= 5.8.3)
-    - VisionSDK/LocationCapture (= 5.8.3)
-    - VisionSDK/LSUniversalBase (= 5.8.3)
-    - VisionSDK/LSUniversalSDK (= 5.8.3)
-    - VisionSDK/MediaCapture (= 5.8.3)
-    - VisionSDK/Meeting (= 5.8.3)
-    - VisionSDK/mucl (= 5.8.3)
-    - VisionSDK/MuclWrapper (= 5.8.3)
-    - VisionSDK/Multiparty (= 5.8.3)
-    - VisionSDK/OCRCapture (= 5.8.3)
-    - VisionSDK/Permissions (= 5.8.3)
-    - VisionSDK/QualityOfService (= 5.8.3)
-    - VisionSDK/Rtcc (= 5.8.3)
-    - VisionSDK/RtccUtils (= 5.8.3)
-    - VisionSDK/SightcallAI (= 5.8.3)
-    - VisionSDK/SightcallVision (= 5.8.3)
-    - VisionSDK/SmartMeasure (= 5.8.3)
-    - VisionSDK/SVGgh (= 5.8.3)
-    - VisionSDK/VisualAssistanceCore (= 5.8.3)
-    - VisionSDK/VisualAssistanceCoreObjC (= 5.8.3)
-    - VisionSDK/Wormhole (= 5.8.3)
-    - VisionSDK/ZipArchive (= 5.8.3)
-  - VisionSDK/AdvancedAnnotations (5.8.3):
+  - VisionSDK (5.8.4):
+    - VisionSDK/AdvancedAnnotations (= 5.8.4)
+    - VisionSDK/ApplicationModel (= 5.8.4)
+    - VisionSDK/CocoaLumberjack (= 5.8.4)
+    - VisionSDK/CodeScanner (= 5.8.4)
+    - VisionSDK/Common (= 5.8.4)
+    - VisionSDK/CommonObjC (= 5.8.4)
+    - VisionSDK/Core (= 5.8.4)
+    - VisionSDK/DigitalFlow (= 5.8.4)
+    - VisionSDK/FileUpload (= 5.8.4)
+    - VisionSDK/Gzip (= 5.8.4)
+    - VisionSDK/LiveTranslation (= 5.8.4)
+    - VisionSDK/LocationCapture (= 5.8.4)
+    - VisionSDK/LSUniversalBase (= 5.8.4)
+    - VisionSDK/LSUniversalSDK (= 5.8.4)
+    - VisionSDK/MediaCapture (= 5.8.4)
+    - VisionSDK/Meeting (= 5.8.4)
+    - VisionSDK/mucl (= 5.8.4)
+    - VisionSDK/MuclWrapper (= 5.8.4)
+    - VisionSDK/Multiparty (= 5.8.4)
+    - VisionSDK/OCRCapture (= 5.8.4)
+    - VisionSDK/Permissions (= 5.8.4)
+    - VisionSDK/QualityOfService (= 5.8.4)
+    - VisionSDK/Rtcc (= 5.8.4)
+    - VisionSDK/RtccUtils (= 5.8.4)
+    - VisionSDK/SightcallAI (= 5.8.4)
+    - VisionSDK/SightcallVision (= 5.8.4)
+    - VisionSDK/SmartMeasure (= 5.8.4)
+    - VisionSDK/SVGgh (= 5.8.4)
+    - VisionSDK/VisualAssistanceCore (= 5.8.4)
+    - VisionSDK/VisualAssistanceCoreObjC (= 5.8.4)
+    - VisionSDK/Wormhole (= 5.8.4)
+    - VisionSDK/ZipArchive (= 5.8.4)
+  - VisionSDK/AdvancedAnnotations (5.8.4):
     - VisionSDK/SVGgh
-  - VisionSDK/ApplicationModel (5.8.3)
-  - VisionSDK/CocoaLumberjack (5.8.3)
-  - VisionSDK/CodeScanner (5.8.3)
-  - VisionSDK/Common (5.8.3)
-  - VisionSDK/CommonObjC (5.8.3)
-  - VisionSDK/Core (5.8.3):
+  - VisionSDK/ApplicationModel (5.8.4)
+  - VisionSDK/CocoaLumberjack (5.8.4)
+  - VisionSDK/CodeScanner (5.8.4)
+  - VisionSDK/Common (5.8.4)
+  - VisionSDK/CommonObjC (5.8.4)
+  - VisionSDK/Core (5.8.4):
     - AFNetworking/NSURLSession (~> 4)
     - VisionSDK/AdvancedAnnotations
     - VisionSDK/ApplicationModel
@@ -77,36 +77,36 @@ PODS:
     - VisionSDK/VisualAssistanceCore
     - VisionSDK/VisualAssistanceCoreObjC
     - VisionSDK/Wormhole
-  - VisionSDK/DigitalFlow (5.8.3)
-  - VisionSDK/FileUpload (5.8.3)
-  - VisionSDK/Gzip (5.8.3)
-  - VisionSDK/LiveTranslation (5.8.3)
-  - VisionSDK/LocationCapture (5.8.3)
-  - VisionSDK/LSUniversalBase (5.8.3)
-  - VisionSDK/LSUniversalSDK (5.8.3)
-  - VisionSDK/MediaCapture (5.8.3):
+  - VisionSDK/DigitalFlow (5.8.4)
+  - VisionSDK/FileUpload (5.8.4)
+  - VisionSDK/Gzip (5.8.4)
+  - VisionSDK/LiveTranslation (5.8.4)
+  - VisionSDK/LocationCapture (5.8.4)
+  - VisionSDK/LSUniversalBase (5.8.4)
+  - VisionSDK/LSUniversalSDK (5.8.4)
+  - VisionSDK/MediaCapture (5.8.4):
     - VisionSDK/Permissions
-  - VisionSDK/Meeting (5.8.3)
-  - VisionSDK/mucl (5.8.3)
-  - VisionSDK/MuclWrapper (5.8.3)
-  - VisionSDK/Multiparty (5.8.3)
-  - VisionSDK/OCRCapture (5.8.3)
-  - VisionSDK/Permissions (5.8.3)
-  - VisionSDK/QualityOfService (5.8.3)
-  - VisionSDK/Rtcc (5.8.3):
+  - VisionSDK/Meeting (5.8.4)
+  - VisionSDK/mucl (5.8.4)
+  - VisionSDK/MuclWrapper (5.8.4)
+  - VisionSDK/Multiparty (5.8.4)
+  - VisionSDK/OCRCapture (5.8.4)
+  - VisionSDK/Permissions (5.8.4)
+  - VisionSDK/QualityOfService (5.8.4)
+  - VisionSDK/Rtcc (5.8.4):
     - VisionSDK/mucl
-  - VisionSDK/RtccUtils (5.8.3)
-  - VisionSDK/SightcallAI (5.8.3)
-  - VisionSDK/SightcallVision (5.8.3)
-  - VisionSDK/SmartMeasure (5.8.3)
-  - VisionSDK/SVGgh (5.8.3)
-  - VisionSDK/VisualAssistanceCore (5.8.3)
-  - VisionSDK/VisualAssistanceCoreObjC (5.8.3)
-  - VisionSDK/Wormhole (5.8.3)
-  - VisionSDK/ZipArchive (5.8.3)
+  - VisionSDK/RtccUtils (5.8.4)
+  - VisionSDK/SightcallAI (5.8.4)
+  - VisionSDK/SightcallVision (5.8.4)
+  - VisionSDK/SmartMeasure (5.8.4)
+  - VisionSDK/SVGgh (5.8.4)
+  - VisionSDK/VisualAssistanceCore (5.8.4)
+  - VisionSDK/VisualAssistanceCoreObjC (5.8.4)
+  - VisionSDK/Wormhole (5.8.4)
+  - VisionSDK/ZipArchive (5.8.4)
 
 DEPENDENCIES:
-  - VisionSDK (= 5.8.3)
+  - VisionSDK (= 5.8.4)
 
 SPEC REPOS:
   https://gitlab.weemo.com/ios/cocoapods-internal.git:
@@ -116,8 +116,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
-  VisionSDK: e83e92964cd0b0586323017c3f1050dfc615e127
+  VisionSDK: 6cee7a96da351c32776a639439f4ea0e77306f97
 
-PODFILE CHECKSUM: b22cdd1c0e137b7f748bc1f3b7e8380d68de1629
+PODFILE CHECKSUM: 09b482ead6710a916861cc7fb594902b4f3cac35
 
 COCOAPODS: 1.15.2

@@ -9,7 +9,7 @@ platform :ios, '14.0'
 
 target 'VisionSDKTestApp' do
   # Pods for VisionSDKTestApp
-  pod 'VisionSDK', '5.8.3'
+  pod 'VisionSDK', '5.8.4'
 
 end
 

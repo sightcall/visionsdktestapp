@@ -43,27 +43,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-    open func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
         sdkLayer.handleShortcut(shortcutItem, completionHandler: completionHandler)
     }
 
-    open func applicationDidEnterBackground(_ application: UIApplication) {
+    func applicationDidEnterBackground(_ application: UIApplication) {
         sdkLayer.resetAndCancel()
     }
 
-    open func applicationWillTerminate(_ application: UIApplication) {
+    func applicationWillTerminate(_ application: UIApplication) {
         sdkLayer.disconnect()
     }
 
-    open func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         SightCallSDKManager.updatePushNotificationToken(deviceToken)
     }
 
-    open func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: any Error) {
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: any Error) {
         SightCallSDKManager.failedToRegisterForRemoteNotifications(error)
     }
 
-    open func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         if let stringUserInfo = userInfo as? [String: Any] {
             sdkLayer.apnsPayloadAvailable(stringUserInfo, fetchCompletionHandler: completionHandler)
         }
