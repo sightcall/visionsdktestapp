@@ -9,7 +9,13 @@ platform :ios, '14.0'
 
 target 'VisionSDKTestApp' do
   # Pods for VisionSDKTestApp
-  pod 'SightCallVisionSDK', '5.4.1'
+  pod 'SightCallVisionSDK', '5.4.2'
+
+end
+
+target 'VisionSDKTestAppBroadcast' do
+  # Pods for VisionSDKTestApp
+  pod 'LSUniversalBroadcastSDK', '42.42.43'
 
 end
 

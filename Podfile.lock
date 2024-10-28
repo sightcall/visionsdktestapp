@@ -6,118 +6,121 @@ PODS:
   - AFNetworking/Reachability (4.0.1)
   - AFNetworking/Security (4.0.1)
   - AFNetworking/Serialization (4.0.1)
-  - VisionSDK (5.8.4):
-    - VisionSDK/AdvancedAnnotations (= 5.8.4)
-    - VisionSDK/ApplicationModel (= 5.8.4)
-    - VisionSDK/CocoaLumberjack (= 5.8.4)
-    - VisionSDK/CodeScanner (= 5.8.4)
-    - VisionSDK/Common (= 5.8.4)
-    - VisionSDK/CommonObjC (= 5.8.4)
-    - VisionSDK/Core (= 5.8.4)
-    - VisionSDK/DigitalFlow (= 5.8.4)
-    - VisionSDK/FileUpload (= 5.8.4)
-    - VisionSDK/Gzip (= 5.8.4)
-    - VisionSDK/LiveTranslation (= 5.8.4)
-    - VisionSDK/LocationCapture (= 5.8.4)
-    - VisionSDK/LSUniversalBase (= 5.8.4)
-    - VisionSDK/LSUniversalSDK (= 5.8.4)
-    - VisionSDK/MediaCapture (= 5.8.4)
-    - VisionSDK/Meeting (= 5.8.4)
-    - VisionSDK/mucl (= 5.8.4)
-    - VisionSDK/MuclWrapper (= 5.8.4)
-    - VisionSDK/Multiparty (= 5.8.4)
-    - VisionSDK/OCRCapture (= 5.8.4)
-    - VisionSDK/Permissions (= 5.8.4)
-    - VisionSDK/QualityOfService (= 5.8.4)
-    - VisionSDK/Rtcc (= 5.8.4)
-    - VisionSDK/RtccUtils (= 5.8.4)
-    - VisionSDK/SightcallAI (= 5.8.4)
-    - VisionSDK/SightcallVision (= 5.8.4)
-    - VisionSDK/SmartMeasure (= 5.8.4)
-    - VisionSDK/SVGgh (= 5.8.4)
-    - VisionSDK/VisualAssistanceCore (= 5.8.4)
-    - VisionSDK/VisualAssistanceCoreObjC (= 5.8.4)
-    - VisionSDK/Wormhole (= 5.8.4)
-    - VisionSDK/ZipArchive (= 5.8.4)
-  - VisionSDK/AdvancedAnnotations (5.8.4):
-    - VisionSDK/SVGgh
-  - VisionSDK/ApplicationModel (5.8.4)
-  - VisionSDK/CocoaLumberjack (5.8.4)
-  - VisionSDK/CodeScanner (5.8.4)
-  - VisionSDK/Common (5.8.4)
-  - VisionSDK/CommonObjC (5.8.4)
-  - VisionSDK/Core (5.8.4):
+  - LSUniversalBroadcastSDK (42.42.43):
+    - LSUniversalBroadcastSDK/mucl_lite (= 42.42.43)
+  - LSUniversalBroadcastSDK/mucl_lite (42.42.43)
+  - SightCallVisionSDK (5.4.2):
+    - SightCallVisionSDK/AdvancedAnnotations (= 5.4.2)
+    - SightCallVisionSDK/ApplicationModel (= 5.4.2)
+    - SightCallVisionSDK/CocoaLumberjack (= 5.4.2)
+    - SightCallVisionSDK/CodeScanner (= 5.4.2)
+    - SightCallVisionSDK/Common (= 5.4.2)
+    - SightCallVisionSDK/CommonObjC (= 5.4.2)
+    - SightCallVisionSDK/Core (= 5.4.2)
+    - SightCallVisionSDK/DigitalFlow (= 5.4.2)
+    - SightCallVisionSDK/FileUpload (= 5.4.2)
+    - SightCallVisionSDK/Gzip (= 5.4.2)
+    - SightCallVisionSDK/LiveTranslation (= 5.4.2)
+    - SightCallVisionSDK/LocationCapture (= 5.4.2)
+    - SightCallVisionSDK/LSUniversalBase (= 5.4.2)
+    - SightCallVisionSDK/LSUniversalSDK (= 5.4.2)
+    - SightCallVisionSDK/MediaCapture (= 5.4.2)
+    - SightCallVisionSDK/Meeting (= 5.4.2)
+    - SightCallVisionSDK/mucl (= 5.4.2)
+    - SightCallVisionSDK/MuclWrapper (= 5.4.2)
+    - SightCallVisionSDK/Multiparty (= 5.4.2)
+    - SightCallVisionSDK/OCRCapture (= 5.4.2)
+    - SightCallVisionSDK/Permissions (= 5.4.2)
+    - SightCallVisionSDK/QualityOfService (= 5.4.2)
+    - SightCallVisionSDK/Rtcc (= 5.4.2)
+    - SightCallVisionSDK/RtccUtils (= 5.4.2)
+    - SightCallVisionSDK/SightcallAI (= 5.4.2)
+    - SightCallVisionSDK/SmartMeasure (= 5.4.2)
+    - SightCallVisionSDK/SVGgh (= 5.4.2)
+    - SightCallVisionSDK/VisualAssistanceCore (= 5.4.2)
+    - SightCallVisionSDK/VisualAssistanceCoreObjC (= 5.4.2)
+    - SightCallVisionSDK/Wormhole (= 5.4.2)
+    - SightCallVisionSDK/ZipArchive (= 5.4.2)
+  - SightCallVisionSDK/AdvancedAnnotations (5.4.2):
+    - SightCallVisionSDK/SVGgh
+  - SightCallVisionSDK/ApplicationModel (5.4.2)
+  - SightCallVisionSDK/CocoaLumberjack (5.4.2)
+  - SightCallVisionSDK/CodeScanner (5.4.2)
+  - SightCallVisionSDK/Common (5.4.2)
+  - SightCallVisionSDK/CommonObjC (5.4.2)
+  - SightCallVisionSDK/Core (5.4.2):
     - AFNetworking/NSURLSession (~> 4)
-    - VisionSDK/AdvancedAnnotations
-    - VisionSDK/ApplicationModel
-    - VisionSDK/CocoaLumberjack
-    - VisionSDK/CodeScanner
-    - VisionSDK/Common
-    - VisionSDK/CommonObjC
-    - VisionSDK/DigitalFlow
-    - VisionSDK/FileUpload
-    - VisionSDK/LiveTranslation
-    - VisionSDK/LocationCapture
-    - VisionSDK/LSUniversalBase
-    - VisionSDK/LSUniversalSDK
-    - VisionSDK/MediaCapture
-    - VisionSDK/Meeting
-    - VisionSDK/mucl
-    - VisionSDK/MuclWrapper
-    - VisionSDK/Multiparty
-    - VisionSDK/OCRCapture
-    - VisionSDK/Permissions
-    - VisionSDK/QualityOfService
-    - VisionSDK/Rtcc
-    - VisionSDK/RtccUtils
-    - VisionSDK/SightcallAI
-    - VisionSDK/SightcallVision
-    - VisionSDK/SmartMeasure
-    - VisionSDK/SVGgh
-    - VisionSDK/VisualAssistanceCore
-    - VisionSDK/VisualAssistanceCoreObjC
-    - VisionSDK/Wormhole
-  - VisionSDK/DigitalFlow (5.8.4)
-  - VisionSDK/FileUpload (5.8.4)
-  - VisionSDK/Gzip (5.8.4)
-  - VisionSDK/LiveTranslation (5.8.4)
-  - VisionSDK/LocationCapture (5.8.4)
-  - VisionSDK/LSUniversalBase (5.8.4)
-  - VisionSDK/LSUniversalSDK (5.8.4)
-  - VisionSDK/MediaCapture (5.8.4):
-    - VisionSDK/Permissions
-  - VisionSDK/Meeting (5.8.4)
-  - VisionSDK/mucl (5.8.4)
-  - VisionSDK/MuclWrapper (5.8.4)
-  - VisionSDK/Multiparty (5.8.4)
-  - VisionSDK/OCRCapture (5.8.4)
-  - VisionSDK/Permissions (5.8.4)
-  - VisionSDK/QualityOfService (5.8.4)
-  - VisionSDK/Rtcc (5.8.4):
-    - VisionSDK/mucl
-  - VisionSDK/RtccUtils (5.8.4)
-  - VisionSDK/SightcallAI (5.8.4)
-  - VisionSDK/SightcallVision (5.8.4)
-  - VisionSDK/SmartMeasure (5.8.4)
-  - VisionSDK/SVGgh (5.8.4)
-  - VisionSDK/VisualAssistanceCore (5.8.4)
-  - VisionSDK/VisualAssistanceCoreObjC (5.8.4)
-  - VisionSDK/Wormhole (5.8.4)
-  - VisionSDK/ZipArchive (5.8.4)
+    - SightCallVisionSDK/AdvancedAnnotations
+    - SightCallVisionSDK/ApplicationModel
+    - SightCallVisionSDK/CocoaLumberjack
+    - SightCallVisionSDK/CodeScanner
+    - SightCallVisionSDK/Common
+    - SightCallVisionSDK/CommonObjC
+    - SightCallVisionSDK/DigitalFlow
+    - SightCallVisionSDK/FileUpload
+    - SightCallVisionSDK/LiveTranslation
+    - SightCallVisionSDK/LocationCapture
+    - SightCallVisionSDK/LSUniversalBase
+    - SightCallVisionSDK/LSUniversalSDK
+    - SightCallVisionSDK/MediaCapture
+    - SightCallVisionSDK/Meeting
+    - SightCallVisionSDK/mucl
+    - SightCallVisionSDK/MuclWrapper
+    - SightCallVisionSDK/Multiparty
+    - SightCallVisionSDK/OCRCapture
+    - SightCallVisionSDK/Permissions
+    - SightCallVisionSDK/QualityOfService
+    - SightCallVisionSDK/Rtcc
+    - SightCallVisionSDK/RtccUtils
+    - SightCallVisionSDK/SightcallAI
+    - SightCallVisionSDK/SmartMeasure
+    - SightCallVisionSDK/SVGgh
+    - SightCallVisionSDK/VisualAssistanceCore
+    - SightCallVisionSDK/VisualAssistanceCoreObjC
+    - SightCallVisionSDK/Wormhole
+  - SightCallVisionSDK/DigitalFlow (5.4.2)
+  - SightCallVisionSDK/FileUpload (5.4.2)
+  - SightCallVisionSDK/Gzip (5.4.2)
+  - SightCallVisionSDK/LiveTranslation (5.4.2)
+  - SightCallVisionSDK/LocationCapture (5.4.2)
+  - SightCallVisionSDK/LSUniversalBase (5.4.2)
+  - SightCallVisionSDK/LSUniversalSDK (5.4.2)
+  - SightCallVisionSDK/MediaCapture (5.4.2):
+    - SightCallVisionSDK/Permissions
+  - SightCallVisionSDK/Meeting (5.4.2)
+  - SightCallVisionSDK/mucl (5.4.2)
+  - SightCallVisionSDK/MuclWrapper (5.4.2)
+  - SightCallVisionSDK/Multiparty (5.4.2)
+  - SightCallVisionSDK/OCRCapture (5.4.2)
+  - SightCallVisionSDK/Permissions (5.4.2)
+  - SightCallVisionSDK/QualityOfService (5.4.2)
+  - SightCallVisionSDK/Rtcc (5.4.2):
+    - SightCallVisionSDK/mucl
+  - SightCallVisionSDK/RtccUtils (5.4.2)
+  - SightCallVisionSDK/SightcallAI (5.4.2)
+  - SightCallVisionSDK/SmartMeasure (5.4.2)
+  - SightCallVisionSDK/SVGgh (5.4.2)
+  - SightCallVisionSDK/VisualAssistanceCore (5.4.2)
+  - SightCallVisionSDK/VisualAssistanceCoreObjC (5.4.2)
+  - SightCallVisionSDK/Wormhole (5.4.2)
+  - SightCallVisionSDK/ZipArchive (5.4.2)
 
 DEPENDENCIES:
-  - VisionSDK (= 5.8.4)
+  - LSUniversalBroadcastSDK (= 42.42.43)
+  - SightCallVisionSDK (= 5.4.2)
 
 SPEC REPOS:
   https://gitlab.weemo.com/ios/cocoapods-internal.git:
-    - VisionSDK
+    - SightCallVisionSDK
   trunk:
     - AFNetworking
+    - LSUniversalBroadcastSDK
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
-  VisionSDK: 6cee7a96da351c32776a639439f4ea0e77306f97
+  LSUniversalBroadcastSDK: 68042b33f4513c5b9a312e0134cbb189e0d9a385
+  SightCallVisionSDK: 2ec04f175ab35fdae49b5a1a82200d6927837e33
 
-PODFILE CHECKSUM: 09b482ead6710a916861cc7fb594902b4f3cac35
+PODFILE CHECKSUM: f9766e07ee625156cccc9770ea7ec485414a94c1
 
 COCOAPODS: 1.15.2
