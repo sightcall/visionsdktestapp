@@ -3,174 +3,265 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF4645D12C7CE402002C96F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4645D02C7CE402002C96F6 /* AppDelegate.swift */; };
-		AF4645D32C7CE402002C96F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4645D22C7CE402002C96F6 /* SceneDelegate.swift */; };
-		AF4645D52C7CE402002C96F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4645D42C7CE402002C96F6 /* ViewController.swift */; };
-		AF4645D82C7CE402002C96F6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AF4645D72C7CE402002C96F6 /* Base */; };
-		AF4645DA2C7CE404002C96F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4645D92C7CE404002C96F6 /* Assets.xcassets */; };
-		AF4645DD2C7CE404002C96F6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AF4645DC2C7CE404002C96F6 /* Base */; };
-		AF4645E52C7CE5BE002C96F6 /* ViewController+ SightCallSDKManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4645E42C7CE5BE002C96F6 /* ViewController+ SightCallSDKManagerDelegate.swift */; };
-		AF4645E92C85C5C9002C96F6 /* VisionSDKNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4645E82C85C5C9002C96F6 /* VisionSDKNavigationController.swift */; };
-		DF649BDFE8F2D9DC6F461CFD /* Pods_VisionSDKTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F6A0D9491F8FD93A486F87 /* Pods_VisionSDKTestApp.framework */; };
+		4266D1B3E6780718621ECB9D /* Pods_VisionSDKTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02BE027102C713BC10D28F2F /* Pods_VisionSDKTestApp.framework */; };
+		AF9CBA452CC93A30005D8DDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9CBA3B2CC93A30005D8DDE /* AppDelegate.swift */; };
+		AF9CBA462CC93A30005D8DDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9CBA422CC93A30005D8DDE /* SceneDelegate.swift */; };
+		AF9CBA472CC93A30005D8DDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9CBA432CC93A30005D8DDE /* ViewController.swift */; };
+		AF9CBA482CC93A30005D8DDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9CBA3C2CC93A30005D8DDE /* Assets.xcassets */; };
+		AF9CBA4A2CC93A30005D8DDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9CBA3F2CC93A30005D8DDE /* LaunchScreen.storyboard */; };
+		AF9CBA4B2CC93A30005D8DDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9CBA412CC93A30005D8DDE /* Main.storyboard */; };
+		AF9CBA4F2CC940CE005D8DDE /* VisionSDKNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9CBA4D2CC940CE005D8DDE /* VisionSDKNavigationController.swift */; };
+		AF9CBA502CC940CE005D8DDE /* ViewController+ SightCallSDKManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9CBA4C2CC940CE005D8DDE /* ViewController+ SightCallSDKManagerDelegate.swift */; };
+		AF9CBA572CC95B7E005D8DDE /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9CBA562CC95B7E005D8DDE /* ReplayKit.framework */; };
+		AF9CBA5E2CC95B7E005D8DDE /* VisionSDKTestAppBroadcast.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AF9CBA552CC95B7E005D8DDE /* VisionSDKTestAppBroadcast.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AF9CBA6B2CC95CCF005D8DDE /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9CBA692CC95CCF005D8DDE /* SampleHandler.swift */; };
+		E4BE054AD34E1F725C0391DC /* Pods_VisionSDKTestAppBroadcast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8171CE8A704FD2357F1F2A /* Pods_VisionSDKTestAppBroadcast.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AF9CBA5C2CC95B7E005D8DDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF9CBA1B2CC93A0E005D8DDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF9CBA542CC95B7E005D8DDE;
+			remoteInfo = VisionSDKTestAppBroadcast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF9CBA632CC95B7E005D8DDE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AF9CBA5E2CC95B7E005D8DDE /* VisionSDKTestAppBroadcast.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		24746702874950681F46E59D /* Pods-VisionSDKTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisionSDKTestApp.release.xcconfig"; path = "Target Support Files/Pods-VisionSDKTestApp/Pods-VisionSDKTestApp.release.xcconfig"; sourceTree = "<group>"; };
-		378FF11A18AD0A6C7AF5C77A /* Pods-VisionSDKTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisionSDKTestApp.debug.xcconfig"; path = "Target Support Files/Pods-VisionSDKTestApp/Pods-VisionSDKTestApp.debug.xcconfig"; sourceTree = "<group>"; };
-		AF4645CD2C7CE402002C96F6 /* VisionSDKTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionSDKTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF4645D02C7CE402002C96F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF4645D22C7CE402002C96F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AF4645D42C7CE402002C96F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AF4645D72C7CE402002C96F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AF4645D92C7CE404002C96F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AF4645DC2C7CE404002C96F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AF4645DE2C7CE404002C96F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF4645E42C7CE5BE002C96F6 /* ViewController+ SightCallSDKManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+ SightCallSDKManagerDelegate.swift"; sourceTree = "<group>"; };
-		AF4645E82C85C5C9002C96F6 /* VisionSDKNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionSDKNavigationController.swift; sourceTree = "<group>"; };
-		AF4645ED2C888ED3002C96F6 /* VisionSDKTestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VisionSDKTestApp.entitlements; sourceTree = "<group>"; };
-		B5F6A0D9491F8FD93A486F87 /* Pods_VisionSDKTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VisionSDKTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02BE027102C713BC10D28F2F /* Pods_VisionSDKTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VisionSDKTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B4AEE99856E3F01CCB6A6C3 /* Pods-VisionSDKTestAppBroadcast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisionSDKTestAppBroadcast.debug.xcconfig"; path = "Target Support Files/Pods-VisionSDKTestAppBroadcast/Pods-VisionSDKTestAppBroadcast.debug.xcconfig"; sourceTree = "<group>"; };
+		55C97F05052D5731367177EE /* Pods-VisionSDKTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisionSDKTestApp.release.xcconfig"; path = "Target Support Files/Pods-VisionSDKTestApp/Pods-VisionSDKTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		6432E3931EEF453CCB924ACA /* Pods-VisionSDKTestAppBroadcast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisionSDKTestAppBroadcast.release.xcconfig"; path = "Target Support Files/Pods-VisionSDKTestAppBroadcast/Pods-VisionSDKTestAppBroadcast.release.xcconfig"; sourceTree = "<group>"; };
+		AF9CBA232CC93A0E005D8DDE /* VisionSDKTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionSDKTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF9CBA3B2CC93A30005D8DDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF9CBA3C2CC93A30005D8DDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF9CBA3D2CC93A30005D8DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF9CBA3E2CC93A30005D8DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF9CBA402CC93A30005D8DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF9CBA422CC93A30005D8DDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AF9CBA432CC93A30005D8DDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF9CBA4C2CC940CE005D8DDE /* ViewController+ SightCallSDKManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ SightCallSDKManagerDelegate.swift"; sourceTree = "<group>"; };
+		AF9CBA4D2CC940CE005D8DDE /* VisionSDKNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionSDKNavigationController.swift; sourceTree = "<group>"; };
+		AF9CBA4E2CC940CE005D8DDE /* VisionSDKTestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VisionSDKTestApp.entitlements; sourceTree = "<group>"; };
+		AF9CBA552CC95B7E005D8DDE /* VisionSDKTestAppBroadcast.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VisionSDKTestAppBroadcast.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF9CBA562CC95B7E005D8DDE /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		AF9CBA682CC95CCF005D8DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF9CBA692CC95CCF005D8DDE /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		AF9CBA6D2CC95F6D005D8DDE /* VisionSDKTestAppBroadcast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VisionSDKTestAppBroadcast.entitlements; sourceTree = "<group>"; };
+		CD19C17D171152CF017C11BA /* Pods-VisionSDKTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisionSDKTestApp.debug.xcconfig"; path = "Target Support Files/Pods-VisionSDKTestApp/Pods-VisionSDKTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DD8171CE8A704FD2357F1F2A /* Pods_VisionSDKTestAppBroadcast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VisionSDKTestAppBroadcast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AF4645CA2C7CE402002C96F6 /* Frameworks */ = {
+		AF9CBA202CC93A0E005D8DDE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF649BDFE8F2D9DC6F461CFD /* Pods_VisionSDKTestApp.framework in Frameworks */,
+				4266D1B3E6780718621ECB9D /* Pods_VisionSDKTestApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF9CBA522CC95B7E005D8DDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF9CBA572CC95B7E005D8DDE /* ReplayKit.framework in Frameworks */,
+				E4BE054AD34E1F725C0391DC /* Pods_VisionSDKTestAppBroadcast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4D726D04A7E17CC23CF7041D /* Pods */ = {
+		AF9CBA1A2CC93A0E005D8DDE = {
 			isa = PBXGroup;
 			children = (
-				378FF11A18AD0A6C7AF5C77A /* Pods-VisionSDKTestApp.debug.xcconfig */,
-				24746702874950681F46E59D /* Pods-VisionSDKTestApp.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		89E51839B23689E6F4360CDB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B5F6A0D9491F8FD93A486F87 /* Pods_VisionSDKTestApp.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AF4645C42C7CE402002C96F6 = {
-			isa = PBXGroup;
-			children = (
-				AF4645CF2C7CE402002C96F6 /* VisionSDKTestApp */,
-				AF4645CE2C7CE402002C96F6 /* Products */,
-				4D726D04A7E17CC23CF7041D /* Pods */,
-				89E51839B23689E6F4360CDB /* Frameworks */,
+				AF9CBA442CC93A30005D8DDE /* VisionSDKTestApp */,
+				AF9CBA6A2CC95CCF005D8DDE /* VisionSDKTestAppBroadcast */,
+				AF9CBA242CC93A0E005D8DDE /* Products */,
+				B7B2C938020E881F5B494871 /* Pods */,
+				DAAF4778ACA6EF9382DB8DB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		AF4645CE2C7CE402002C96F6 /* Products */ = {
+		AF9CBA242CC93A0E005D8DDE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AF4645CD2C7CE402002C96F6 /* VisionSDKTestApp.app */,
+				AF9CBA232CC93A0E005D8DDE /* VisionSDKTestApp.app */,
+				AF9CBA552CC95B7E005D8DDE /* VisionSDKTestAppBroadcast.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AF4645CF2C7CE402002C96F6 /* VisionSDKTestApp */ = {
+		AF9CBA442CC93A30005D8DDE /* VisionSDKTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				AF4645ED2C888ED3002C96F6 /* VisionSDKTestApp.entitlements */,
-				AF4645D02C7CE402002C96F6 /* AppDelegate.swift */,
-				AF4645D22C7CE402002C96F6 /* SceneDelegate.swift */,
-				AF4645D42C7CE402002C96F6 /* ViewController.swift */,
-				AF4645E42C7CE5BE002C96F6 /* ViewController+ SightCallSDKManagerDelegate.swift */,
-				AF4645E82C85C5C9002C96F6 /* VisionSDKNavigationController.swift */,
-				AF4645D62C7CE402002C96F6 /* Main.storyboard */,
-				AF4645D92C7CE404002C96F6 /* Assets.xcassets */,
-				AF4645DB2C7CE404002C96F6 /* LaunchScreen.storyboard */,
-				AF4645DE2C7CE404002C96F6 /* Info.plist */,
+				AF9CBA4E2CC940CE005D8DDE /* VisionSDKTestApp.entitlements */,
+				AF9CBA3D2CC93A30005D8DDE /* Info.plist */,
+				AF9CBA3B2CC93A30005D8DDE /* AppDelegate.swift */,
+				AF9CBA422CC93A30005D8DDE /* SceneDelegate.swift */,
+				AF9CBA432CC93A30005D8DDE /* ViewController.swift */,
+				AF9CBA4C2CC940CE005D8DDE /* ViewController+ SightCallSDKManagerDelegate.swift */,
+				AF9CBA4D2CC940CE005D8DDE /* VisionSDKNavigationController.swift */,
+				AF9CBA3C2CC93A30005D8DDE /* Assets.xcassets */,
+				AF9CBA3F2CC93A30005D8DDE /* LaunchScreen.storyboard */,
+				AF9CBA412CC93A30005D8DDE /* Main.storyboard */,
 			);
 			path = VisionSDKTestApp;
+			sourceTree = "<group>";
+		};
+		AF9CBA6A2CC95CCF005D8DDE /* VisionSDKTestAppBroadcast */ = {
+			isa = PBXGroup;
+			children = (
+				AF9CBA6D2CC95F6D005D8DDE /* VisionSDKTestAppBroadcast.entitlements */,
+				AF9CBA682CC95CCF005D8DDE /* Info.plist */,
+				AF9CBA692CC95CCF005D8DDE /* SampleHandler.swift */,
+			);
+			path = VisionSDKTestAppBroadcast;
+			sourceTree = "<group>";
+		};
+		B7B2C938020E881F5B494871 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD19C17D171152CF017C11BA /* Pods-VisionSDKTestApp.debug.xcconfig */,
+				55C97F05052D5731367177EE /* Pods-VisionSDKTestApp.release.xcconfig */,
+				0B4AEE99856E3F01CCB6A6C3 /* Pods-VisionSDKTestAppBroadcast.debug.xcconfig */,
+				6432E3931EEF453CCB924ACA /* Pods-VisionSDKTestAppBroadcast.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DAAF4778ACA6EF9382DB8DB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02BE027102C713BC10D28F2F /* Pods_VisionSDKTestApp.framework */,
+				AF9CBA562CC95B7E005D8DDE /* ReplayKit.framework */,
+				DD8171CE8A704FD2357F1F2A /* Pods_VisionSDKTestAppBroadcast.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AF4645CC2C7CE402002C96F6 /* VisionSDKTestApp */ = {
+		AF9CBA222CC93A0E005D8DDE /* VisionSDKTestApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF4645E12C7CE404002C96F6 /* Build configuration list for PBXNativeTarget "VisionSDKTestApp" */;
+			buildConfigurationList = AF9CBA362CC93A10005D8DDE /* Build configuration list for PBXNativeTarget "VisionSDKTestApp" */;
 			buildPhases = (
-				DFB8A25CB3C6998850F86CA3 /* [CP] Check Pods Manifest.lock */,
-				AF4645C92C7CE402002C96F6 /* Sources */,
-				AF4645CA2C7CE402002C96F6 /* Frameworks */,
-				AF4645CB2C7CE402002C96F6 /* Resources */,
-				F183F3C7CED72A6F0F43A49B /* [CP] Embed Pods Frameworks */,
+				30BA359C2E772AC3438220EE /* [CP] Check Pods Manifest.lock */,
+				AF9CBA1F2CC93A0E005D8DDE /* Sources */,
+				AF9CBA202CC93A0E005D8DDE /* Frameworks */,
+				AF9CBA212CC93A0E005D8DDE /* Resources */,
+				4008930759B0972643B8B52B /* [CP] Embed Pods Frameworks */,
+				AF9CBA632CC95B7E005D8DDE /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF9CBA5D2CC95B7E005D8DDE /* PBXTargetDependency */,
+			);
+			name = VisionSDKTestApp;
+			productName = VisionSDKTestApp;
+			productReference = AF9CBA232CC93A0E005D8DDE /* VisionSDKTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF9CBA542CC95B7E005D8DDE /* VisionSDKTestAppBroadcast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF9CBA602CC95B7E005D8DDE /* Build configuration list for PBXNativeTarget "VisionSDKTestAppBroadcast" */;
+			buildPhases = (
+				D1DE1464647D9E45ABF2F2A6 /* [CP] Check Pods Manifest.lock */,
+				AF9CBA512CC95B7E005D8DDE /* Sources */,
+				AF9CBA522CC95B7E005D8DDE /* Frameworks */,
+				AF9CBA532CC95B7E005D8DDE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = VisionSDKTestApp;
-			packageProductDependencies = (
-			);
-			productName = VisionSDKTestApp;
-			productReference = AF4645CD2C7CE402002C96F6 /* VisionSDKTestApp.app */;
-			productType = "com.apple.product-type.application";
+			name = VisionSDKTestAppBroadcast;
+			productName = VisionSDKTestAppBroadcast;
+			productReference = AF9CBA552CC95B7E005D8DDE /* VisionSDKTestAppBroadcast.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AF4645C52C7CE402002C96F6 /* Project object */ = {
+		AF9CBA1B2CC93A0E005D8DDE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					AF4645CC2C7CE402002C96F6 = {
-						CreatedOnToolsVersion = 15.4;
+					AF9CBA222CC93A0E005D8DDE = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					AF9CBA542CC95B7E005D8DDE = {
+						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
-			buildConfigurationList = AF4645C82C7CE402002C96F6 /* Build configuration list for PBXProject "VisionSDKTestApp" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = AF9CBA1E2CC93A0E005D8DDE /* Build configuration list for PBXProject "VisionSDKTestApp" */;
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = AF4645C42C7CE402002C96F6;
-			productRefGroup = AF4645CE2C7CE402002C96F6 /* Products */;
+			mainGroup = AF9CBA1A2CC93A0E005D8DDE;
+			minimizedProjectReferenceProxies = 1;
+			productRefGroup = AF9CBA242CC93A0E005D8DDE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AF4645CC2C7CE402002C96F6 /* VisionSDKTestApp */,
+				AF9CBA222CC93A0E005D8DDE /* VisionSDKTestApp */,
+				AF9CBA542CC95B7E005D8DDE /* VisionSDKTestAppBroadcast */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AF4645CB2C7CE402002C96F6 /* Resources */ = {
+		AF9CBA212CC93A0E005D8DDE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF4645DA2C7CE404002C96F6 /* Assets.xcassets in Resources */,
-				AF4645DD2C7CE404002C96F6 /* Base in Resources */,
-				AF4645D82C7CE402002C96F6 /* Base in Resources */,
+				AF9CBA482CC93A30005D8DDE /* Assets.xcassets in Resources */,
+				AF9CBA4A2CC93A30005D8DDE /* LaunchScreen.storyboard in Resources */,
+				AF9CBA4B2CC93A30005D8DDE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF9CBA532CC95B7E005D8DDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		DFB8A25CB3C6998850F86CA3 /* [CP] Check Pods Manifest.lock */ = {
+		30BA359C2E772AC3438220EE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,7 +283,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F183F3C7CED72A6F0F43A49B /* [CP] Embed Pods Frameworks */ = {
+		4008930759B0972643B8B52B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,44 +300,152 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VisionSDKTestApp/Pods-VisionSDKTestApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D1DE1464647D9E45ABF2F2A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VisionSDKTestAppBroadcast-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AF4645C92C7CE402002C96F6 /* Sources */ = {
+		AF9CBA1F2CC93A0E005D8DDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF4645D52C7CE402002C96F6 /* ViewController.swift in Sources */,
-				AF4645E52C7CE5BE002C96F6 /* ViewController+ SightCallSDKManagerDelegate.swift in Sources */,
-				AF4645D12C7CE402002C96F6 /* AppDelegate.swift in Sources */,
-				AF4645D32C7CE402002C96F6 /* SceneDelegate.swift in Sources */,
-				AF4645E92C85C5C9002C96F6 /* VisionSDKNavigationController.swift in Sources */,
+				AF9CBA452CC93A30005D8DDE /* AppDelegate.swift in Sources */,
+				AF9CBA4F2CC940CE005D8DDE /* VisionSDKNavigationController.swift in Sources */,
+				AF9CBA502CC940CE005D8DDE /* ViewController+ SightCallSDKManagerDelegate.swift in Sources */,
+				AF9CBA462CC93A30005D8DDE /* SceneDelegate.swift in Sources */,
+				AF9CBA472CC93A30005D8DDE /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF9CBA512CC95B7E005D8DDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF9CBA6B2CC95CCF005D8DDE /* SampleHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		AF4645D62C7CE402002C96F6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF4645D72C7CE402002C96F6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		AF9CBA5D2CC95B7E005D8DDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF9CBA542CC95B7E005D8DDE /* VisionSDKTestAppBroadcast */;
+			targetProxy = AF9CBA5C2CC95B7E005D8DDE /* PBXContainerItemProxy */;
 		};
-		AF4645DB2C7CE404002C96F6 /* LaunchScreen.storyboard */ = {
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF9CBA3F2CC93A30005D8DDE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AF4645DC2C7CE404002C96F6 /* Base */,
+				AF9CBA3E2CC93A30005D8DDE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AF9CBA412CC93A30005D8DDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF9CBA402CC93A30005D8DDE /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		AF4645DF2C7CE404002C96F6 /* Debug */ = {
+		AF9CBA372CC93A10005D8DDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD19C17D171152CF017C11BA /* Pods-VisionSDKTestApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VisionSDKTestApp/VisionSDKTestApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WDH9UWSA4G;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VisionSDKTestApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = 1.0;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = 1.0;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = 1.0;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sightcall.VisionSDKTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF9CBA382CC93A10005D8DDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55C97F05052D5731367177EE /* Pods-VisionSDKTestApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VisionSDKTestApp/VisionSDKTestApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WDH9UWSA4G;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VisionSDKTestApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = 1.0;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = 1.0;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = 1.0;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sightcall.VisionSDKTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF9CBA392CC93A10005D8DDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -298,7 +497,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -309,7 +508,7 @@
 			};
 			name = Debug;
 		};
-		AF4645E02C7CE404002C96F6 /* Release */ = {
+		AF9CBA3A2CC93A10005D8DDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -355,7 +554,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -365,68 +564,56 @@
 			};
 			name = Release;
 		};
-		AF4645E22C7CE404002C96F6 /* Debug */ = {
+		AF9CBA612CC95B7E005D8DDE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 378FF11A18AD0A6C7AF5C77A /* Pods-VisionSDKTestApp.debug.xcconfig */;
+			baseConfigurationReference = 0B4AEE99856E3F01CCB6A6C3 /* Pods-VisionSDKTestAppBroadcast.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = VisionSDKTestApp/VisionSDKTestApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = VisionSDKTestAppBroadcast/VisionSDKTestAppBroadcast.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WDH9UWSA4G;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VisionSDKTestApp/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Reason for using camera";
-				INFOPLIST_KEY_NSLocationTemporaryUsageDescriptionDictionary = "Reason for using location";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Reason for using microphone";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_FILE = VisionSDKTestAppBroadcast/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VisionSDKTestAppBroadcast;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sightcall.VisionSDKTestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sightcall.VisionSDKTestApp.VisionSDKTestAppBroadcast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		AF4645E32C7CE404002C96F6 /* Release */ = {
+		AF9CBA622CC95B7E005D8DDE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24746702874950681F46E59D /* Pods-VisionSDKTestApp.release.xcconfig */;
+			baseConfigurationReference = 6432E3931EEF453CCB924ACA /* Pods-VisionSDKTestAppBroadcast.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = VisionSDKTestApp/VisionSDKTestApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = VisionSDKTestAppBroadcast/VisionSDKTestAppBroadcast.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WDH9UWSA4G;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VisionSDKTestApp/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Reason for using camera";
-				INFOPLIST_KEY_NSLocationTemporaryUsageDescriptionDictionary = "Reason for using location";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Reason for using microphone";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_FILE = VisionSDKTestAppBroadcast/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VisionSDKTestAppBroadcast;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sightcall.VisionSDKTestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sightcall.VisionSDKTestApp.VisionSDKTestAppBroadcast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -436,25 +623,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AF4645C82C7CE402002C96F6 /* Build configuration list for PBXProject "VisionSDKTestApp" */ = {
+		AF9CBA1E2CC93A0E005D8DDE /* Build configuration list for PBXProject "VisionSDKTestApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AF4645DF2C7CE404002C96F6 /* Debug */,
-				AF4645E02C7CE404002C96F6 /* Release */,
+				AF9CBA392CC93A10005D8DDE /* Debug */,
+				AF9CBA3A2CC93A10005D8DDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF4645E12C7CE404002C96F6 /* Build configuration list for PBXNativeTarget "VisionSDKTestApp" */ = {
+		AF9CBA362CC93A10005D8DDE /* Build configuration list for PBXNativeTarget "VisionSDKTestApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AF4645E22C7CE404002C96F6 /* Debug */,
-				AF4645E32C7CE404002C96F6 /* Release */,
+				AF9CBA372CC93A10005D8DDE /* Debug */,
+				AF9CBA382CC93A10005D8DDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF9CBA602CC95B7E005D8DDE /* Build configuration list for PBXNativeTarget "VisionSDKTestAppBroadcast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF9CBA612CC95B7E005D8DDE /* Debug */,
+				AF9CBA622CC95B7E005D8DDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AF4645C52C7CE402002C96F6 /* Project object */;
+	rootObject = AF9CBA1B2CC93A0E005D8DDE /* Project object */;
 }

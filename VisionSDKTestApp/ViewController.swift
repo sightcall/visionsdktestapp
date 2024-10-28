@@ -44,7 +44,7 @@ class ViewController: UIViewController {
 //        let urlString = "https://guest.sightcall.com/call/23d16e5d8e6d17475ed0002c5d5049d1bbf269ff?pin=914825"
 
         // ?debug=true
-        let urlString = "https://sght.io/a/Me6aT1SA?m=mMS2O5cRQL"
+        let urlString = "https://sght.io/a/3o7Si1DK?m=mbgzGqThY4"
         let url = URL(string: urlString)
         // Now you can start the call
         sdkLayer?.startSdk(url: url, data: nil, forceReload: false)
