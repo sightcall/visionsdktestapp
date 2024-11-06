@@ -11,6 +11,10 @@ import ApplicationModel
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var urlTextField: UITextField!
+
+
+
     var termsOfConsentAlertController: UIAlertController?
 
     var sdkLayer: SightCallSDKManager? {
@@ -36,7 +40,7 @@ class ViewController: UIViewController {
             sdkLayer?.model.controllerDelegate = visionSDKNavigationController
         }
 
-        start()
+//        start()
     }
 
     func start() {
@@ -55,5 +59,11 @@ class ViewController: UIViewController {
         sdkLayer?.disconnect()
     }
 
+    @IBAction func goButtonTouched(_ sender: Any) {
+        if let urlString = urlTextField.text,
+           let url = URL(string: urlString) {
+            sdkLayer?.startSdk(url: url, data: nil, forceReload: false)
+        }
+    }
 }
 

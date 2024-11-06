@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kkf-bL-hTt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kkf-bL-hTt">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,14 +15,39 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vision Meeting URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gkg-4a-VY2">
+                                <rect key="frame" x="32" y="175" width="329" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tno-Hv-XWa">
+                                <rect key="frame" x="173.66666666666666" y="217" width="46" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Go"/>
+                                <connections>
+                                    <action selector="goButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xd7-HB-CgT"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gkg-4a-VY2" secondAttribute="trailing" constant="32" id="5Sm-oM-uNi"/>
+                            <constraint firstItem="Tno-Hv-XWa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="F7j-Uz-lOZ"/>
+                            <constraint firstItem="gkg-4a-VY2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Y0t-L0-xv2"/>
+                            <constraint firstItem="gkg-4a-VY2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="dvZ-hu-PMm"/>
+                            <constraint firstItem="Tno-Hv-XWa" firstAttribute="top" secondItem="gkg-4a-VY2" secondAttribute="bottom" constant="8" symbolic="YES" id="eCZ-pz-nJk"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="P7u-RB-y0K"/>
+                    <connections>
+                        <outlet property="urlTextField" destination="gkg-4a-VY2" id="Z56-Y2-w9J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-398" y="4"/>
+            <point key="canvasLocation" x="-399.23664122137404" y="3.5211267605633805"/>
         </scene>
         <!--VisionSDK Navigation Controller-->
         <scene sceneID="g8g-qL-SNG">
