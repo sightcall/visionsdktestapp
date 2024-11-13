@@ -2,7 +2,7 @@
 # platform :ios, '9.0'
 
 source 'https://cdn.cocoapods.org/'
-source 'https://gitlab.weemo.com/ios/cocoapods-internal.git'
+# source 'https://gitlab.weemo.com/ios/cocoapods-internal.git'
 
 use_frameworks!
 platform :ios, '14.0'
