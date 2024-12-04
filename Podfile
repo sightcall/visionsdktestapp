@@ -2,20 +2,19 @@
 # platform :ios, '9.0'
 
 source 'https://cdn.cocoapods.org/'
-# source 'https://gitlab.weemo.com/ios/cocoapods-internal.git'
 
 use_frameworks!
 platform :ios, '14.0'
 
 target 'VisionSDKTestApp' do
   # Pods for VisionSDKTestApp
-  pod 'SightCallVisionSDK', '5.4.2'
+  pod 'SightCallVisionSDK', '5.5.0'
 
 end
 
 target 'VisionSDKTestAppBroadcast' do
   # Pods for VisionSDKTestApp
-  pod 'LSUniversalBroadcastSDK', '42.42.43'
+  pod 'LSUniversalBroadcastSDK', '5.4.2'
 
 end
 
