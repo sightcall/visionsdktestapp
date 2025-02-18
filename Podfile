@@ -8,7 +8,7 @@ platform :ios, '14.0'
 
 target 'VisionSDKTestApp' do
   # Pods for VisionSDKTestApp
-  pod 'SightCallVisionSDK', '5.5.0'
+  pod 'SightCallVisionSDK', '5.5.3'
 
 end
 

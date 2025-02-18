@@ -12,7 +12,7 @@ import LSUniversalSDK
 // MARK: - SightCallSDKManagerDelegate
 extension ViewController: SightCallSDKManagerDelegate {
 
-    func sdkManagerParentViewController() -> UINavigationController? {
+    func sdkManagerParentViewController() -> UIViewController? {
         sdkLayer?.model.controllerDelegate as! UINavigationController?
     }
 
