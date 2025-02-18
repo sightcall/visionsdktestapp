@@ -74,7 +74,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 // Make sure app fails with useful error if SightCallSDKManager.delegate is not set
 //
 extension AppDelegate: SightCallSDKManagerDelegate {
-    public func sdkManagerParentViewController() -> UINavigationController? {
+    public func sdkManagerParentViewController() -> UIViewController? {
         fatalError("delegate not set on SightcallSDKAppDelegate.sdkLayer. You need to set sdkLayer.delegate to a class implementing SightCallSDKManagerDelegate.")
     }
 }
