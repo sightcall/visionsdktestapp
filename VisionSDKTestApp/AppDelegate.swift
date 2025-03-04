@@ -21,11 +21,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     public override init() {
         super.init()
-        sdkLayer = SightCallSDKManager(delegate: self)
+        sdkLayer = SightCallSDKManager(delegate: nil) // delegate is set afterwards by ViewController
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        sdkLayer.updateApplicationMenu()
+
+        if let url = sdkLayer?.defaultStartupUrl {
+            DispatchQueue.main.async {
+                self.sdkLayer?.startSdk(url: url, data: nil, forceReload: false)
+            }
+        }
+
         return true
     }
 
@@ -44,7 +52,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
-        sdkLayer.handleShortcut(shortcutItem, completionHandler: completionHandler)
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
@@ -69,14 +76,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
-}
-
-// Make sure app fails with useful error if SightCallSDKManager.delegate is not set
-//
-extension AppDelegate: SightCallSDKManagerDelegate {
-    public func sdkManagerParentViewController() -> UIViewController? {
-        fatalError("delegate not set on SightcallSDKAppDelegate.sdkLayer. You need to set sdkLayer.delegate to a class implementing SightCallSDKManagerDelegate.")
-    }
 }
 
 /**
