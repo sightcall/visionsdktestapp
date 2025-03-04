@@ -47,6 +47,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+    func windowScene(_ windowScene: UIWindowScene, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        (UIApplication.shared.delegate as? AppDelegate)?.sdkLayer.handleShortcut(shortcutItem, completionHandler: completionHandler)
+
+    }
 
 }
 
